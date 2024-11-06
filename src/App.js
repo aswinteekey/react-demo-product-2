@@ -1,13 +1,12 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import HomeProduct from './components/HomeProduct';
-import UserComments from './components/UserComments';
+import RouterPage from './components/RouterPage';
+
 
 function App() {
   return (
     <div className="App">
-     <HomeProduct/>
-     <UserComments/>
+     <RouterPage/>
     </div>
   );
 }

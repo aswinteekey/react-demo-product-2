@@ -1,6 +1,8 @@
 import React,{useState} from "react";
 import {Card,Button,Row} from 'react-bootstrap';
 import { productData } from "./Product.dat";
+import UserComments from './UserComments'
+import {useNavigate} from 'react-router-dom'
 
 function HomeProduct() {
   const[start,upDate]=useState(productData)
@@ -18,6 +20,15 @@ function HomeProduct() {
     ))
     upDate(newCount)
   }
+
+
+  const navigate = useNavigate();
+
+  const addToCart = (product) => {
+    navigate('/react-demo-product-2/cart', { state: product });
+    
+  };
+
   return (
     <div >
       <h2 className="bg-black text-white p-3">Our Products</h2>
@@ -32,14 +43,14 @@ function HomeProduct() {
           <p className='m-0'>{eachProduct.desc}</p>
           <p className='m-0'> &#8377; {eachProduct.price}</p>
           <p className='m-2'> <Button onClick={()=>decCount(eachProduct.id)}style={{ backgroundColor: "#f0f0f0", borderColor: "#f0f0f0", color: "#333" }}>-</Button> {eachProduct.qty} <Button style={{ backgroundColor: "#f0f0f0", borderColor: "#f0f0f0", color: "#333" }} onClick={()=>incCount(eachProduct.id)}>+</Button></p>
-          <Button variant="dark">Add to Cart</Button>
+          <Button variant="dark" onClick={() => addToCart(eachProduct)}>Buy Now</Button>
         </Card.Body>
       </Card>
 
       ))}
       </Row>
       </div>
-      
+      <UserComments/>
     </div>
   );
 }
