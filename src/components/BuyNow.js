@@ -2,7 +2,7 @@ import React from "react";
 import { Form, Button, Container } from "react-bootstrap";
 import { useLocation,useNavigate } from "react-router-dom";
 
-function Cart() {
+function BuyNow() {
     
   const location = useLocation();
   const product = location.state;
@@ -43,4 +43,4 @@ function Cart() {
   );
 }
 
-export default Cart;
+export default BuyNow;
