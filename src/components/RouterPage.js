@@ -5,6 +5,8 @@ import NotFount from "./NotFount";
 import Contact from "./Contact";
 import NavBar from "./NavBar";
 import BuyNow from "./BuyNow";
+import Todo from "./todu/Todo";
+import Cart from "./Cart";
 
 const RouterPage = () => {
   
@@ -23,6 +25,14 @@ const RouterPage = () => {
         <Route
           path="/react-demo-product-2/buynow"
           element={<BuyNow />}
+        ></Route>
+        <Route
+          path="/react-demo-product-2/bucketlist"
+          element={<Todo />}
+        ></Route>
+        <Route
+          path="/react-demo-product-2/cart"
+          element={<Cart />}
         ></Route>
         <Route path="*" element={<NotFount />}></Route>
       </Routes>

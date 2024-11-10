@@ -3,24 +3,26 @@ import AddTask from "./AddTask";
 import ListTask from "./ListTask";
 
 function Todo() {
-  const[tasks,setTasks]=useState([
-    {title:'Buy Books'},
-    {title:'Buy Phone'},
-    {title:'Cart some mobile accessories'}
-  ])
+  const[tasks,setTasks]=useState([])
 
   const addNewTitle=(title)=>{
     const newItem=[...tasks,{title}]
     setTasks(newItem)
   }
+
+  const removeTask=(index)=>{
+    const newList=[...tasks]
+    newList.splice(index,1)
+    setTasks(newList)
+  }
   return (
     <>
       <div className='todo-container'>
-      <h3 className='bg-dark text-white p-3'>Add Bucket list</h3>
-        <div className='add-task' ><AddTask addNewTitle={addNewTitle}/></div>
+      <h2 className="bg-black text-white p-3 mt-lg-5 mt-5">Bucket List</h2>
+        <div className='add-task' ><AddTask addNewTitle={addNewTitle} /></div>
         <div className='tasks'>
-        {tasks.map((eachtask)=>(
-          <ListTask task={eachtask}/>
+        {tasks.map((eachtask,index)=>(
+          <ListTask task={eachtask} removeTask={removeTask} index={index} key={index}/>
         ))}
         </div>
       </div>
