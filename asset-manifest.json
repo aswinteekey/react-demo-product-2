@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-demo-product-2/static/css/main.9a5c6096.css",
-    "main.js": "/react-demo-product-2/static/js/main.ea82767f.js",
+    "main.css": "/react-demo-product-2/static/css/main.03171729.css",
+    "main.js": "/react-demo-product-2/static/js/main.70d4b9a0.js",
     "static/js/453.1d8c477c.chunk.js": "/react-demo-product-2/static/js/453.1d8c477c.chunk.js",
     "static/media/watch.webp": "/react-demo-product-2/static/media/watch.fe661fc661255554ba89.webp",
     "static/media/tshirt.jpg": "/react-demo-product-2/static/media/tshirt.39692f935f236ea60090.jpg",
@@ -10,12 +10,12 @@
     "static/media/ring.webp": "/react-demo-product-2/static/media/ring.3cec10ddd28b084b18f3.webp",
     "static/media/pant.webp": "/react-demo-product-2/static/media/pant.be23ccada98f79084786.webp",
     "index.html": "/react-demo-product-2/index.html",
-    "main.9a5c6096.css.map": "/react-demo-product-2/static/css/main.9a5c6096.css.map",
-    "main.ea82767f.js.map": "/react-demo-product-2/static/js/main.ea82767f.js.map",
+    "main.03171729.css.map": "/react-demo-product-2/static/css/main.03171729.css.map",
+    "main.70d4b9a0.js.map": "/react-demo-product-2/static/js/main.70d4b9a0.js.map",
     "453.1d8c477c.chunk.js.map": "/react-demo-product-2/static/js/453.1d8c477c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a5c6096.css",
-    "static/js/main.ea82767f.js"
+    "static/css/main.03171729.css",
+    "static/js/main.70d4b9a0.js"
   ]
 }
